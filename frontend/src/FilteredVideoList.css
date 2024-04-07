@@ -1,0 +1,105 @@
+.video-item {
+  background-color: #121212; /* Fondo oscuro */
+  border: 1px solid #333; /* Borde oscuro */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2vw; /* Se ajusta al tamaño de la pantalla */
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.video-details {
+  padding: 2vw; /* Se ajusta al tamaño de la pantalla */
+}
+
+.video-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-media img,
+.video-media video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Borde redondeado para las imágenes y videos */
+  transition: transform 0.3s ease; /* Transición suave para la imagen en hover */
+}
+
+.video-details h3,
+.video-details p {
+  color: #fff; /* Texto blanco */
+  margin: 0;
+}
+
+/* Añadir sombra suave al hover */
+.video-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Transición suave para la imagen en hover */
+.video-item:hover .video-media img,
+.video-item:hover .video-media video {
+  transform: scale(1.05);
+}
+
+
+
+
+.thumbnail-container {
+  display: flex;
+}
+
+.thumbnail-container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #121212; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+.search-container {
+  padding-top: 20px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #333; /* Borde más oscuro */
+  border-radius: 4px;
+  background-color: #333; /* Fondo más oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+button {
+  background-color: #ff0000; /* Rojo de YouTube */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #777; /* Gris más oscuro para el estado deshabilitado */
+  cursor: not-allowed;
+}
+
+/* Estilos para el nuevo botón Upload */
+.upload-btn {
+  padding: 5px 10px; /* Ajusta el padding para que sea más pequeño */
+  font-size: 14px;    /* Ajusta el tamaño de la fuente */
+}
+
+
